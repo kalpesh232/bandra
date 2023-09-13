@@ -1,3 +1,6 @@
+# compare different categories or discrete data points.
+# comparing quantities of different categories, like sales figures for different products or population by country.
+
 import matplotlib.pyplot as plt
 
 plt.bar([2,8,4,5],[9,5,4,3], label = 'Example one')

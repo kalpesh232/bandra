@@ -1,3 +1,6 @@
+# display the cumulative contribution of multiple variables over a common axis.
+# composition of a whole while highlighting the individual contributions.
+
 import matplotlib.pyplot as plt
 
 days = [1,2,3,4,5]

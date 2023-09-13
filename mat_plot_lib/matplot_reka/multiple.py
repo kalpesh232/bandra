@@ -1,3 +1,7 @@
+# you want to display multiple related plots in a single figure.
+# comparing multiple datasets  same data.
+# Each subplot can use various types of graphs
+
 import numpy as np
 import matplotlib.pyplot as plt
 
