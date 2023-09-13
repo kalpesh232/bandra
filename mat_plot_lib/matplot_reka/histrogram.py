@@ -1,3 +1,6 @@
+# distribution of continuous or numerical data.
+# distribution of data within a specific range or bin.
+
 import matplotlib.pyplot as plt
 
 population_ages = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,21,21,21,21,21,21,21,21,21,21,21,21,21,21,100]

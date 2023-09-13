@@ -1,3 +1,6 @@
+# Use a scatter plot to visualize the relationship between two continuous variables.
+# Suitable for identifying patterns(linear, quadratic, or nonlinear) , trends, or correlations between two variables.
+
 import matplotlib.pyplot as plt
 
 x = [2,4,6,8]
