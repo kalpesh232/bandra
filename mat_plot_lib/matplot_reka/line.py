@@ -1,3 +1,7 @@
+# changes over continuous  data points.
+# time series data, such as stock prices over time or temperature fluctuations.
+# single variable changes with respect to another.
+
 from matplotlib import pyplot as plt
 from matplotlib import style
 

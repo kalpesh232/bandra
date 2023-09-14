@@ -1,3 +1,7 @@
+# Use a pie chart to represent parts of a categorical dataset.
+# Suitable for showing percentages, such as market share for different product categories.
+# Best used when you have a small number of categories (3-7) 
+
 import matplotlib.pyplot as plt
 
 slices = [5,3,5,5]
