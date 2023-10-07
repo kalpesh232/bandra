@@ -22,3 +22,23 @@ def ShowPage(request):
     all_user = Student.objects.all()
     print('all_user : ',all_user)
     return render(request, 'myapp/show.html',{'key1':all_user})
+
+def EditPage(request, pk):
+    user_data = Student.objects.get(id=pk)
+    print('user_data : ', user_data)
+    return render(request, 'myapp/edit.html',{'key2' : user_data})
+
+def UpdateInfo(request, pk):
+    user_info = Student.objects.get(id=pk)
+    user_info.Firstname = request.POST['fname']
+    user_info.Lastname = request.POST['lname']
+    user_info.Email = request.POST['email']
+    user_info.Contact = request.POST['contact']
+    user_info.save()
+    return redirect('ShowPage')
+
+def DeleteRecord(request,pk):
+    delete_record = Student.objects.get(id=pk)
+    delete_record.delete()
+    return redirect('ShowPage')
+

@@ -22,6 +22,8 @@
         <th>Lastname</th>
         <th>Email</th>
         <th>Contact</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -32,6 +34,14 @@
         <td>{{key.Lastname}}</td>
         <td>{{key.Email}}</td>
         <td>{{key.Contact}}</td>
+        <td> <form action="{% url 'editpage' key.id %}" method="post">
+          {% csrf_token %}
+          <input type="submit" value="Edit">
+        </form> </td>
+        <td><form action="{% url 'delete' key.id %}" method="post">
+          {% csrf_token %}
+          <input type="submit" value="Delete">
+        </form> </td>
       </tr>
       {% endfor %}
     </tbody>
