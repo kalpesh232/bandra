@@ -1,0 +1,5 @@
+data defination language - create, drop, alter, truncate
+data manipulation language - insert, updaate, delete
+data query language - select
+data transsaction language - commit, rollback, save-point 
+data control language - grant, revoke
