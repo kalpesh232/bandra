@@ -7,24 +7,23 @@ def RegisterPage(request):
 
 def User_Register(request):
     if request.method == 'POST':
-        firstName = request.POST['fname']
-        lastName = request.POST['lname']
+        firstname = request.POST['fname']
+        lastname = request.POST['lname']
         email = request.POST['email']
         phone = request.POST['phone']
         password = request.POST['password']
         cpassword = request.POST['cpassword']
 
-        user = UserRegister.objects.filter(Email=email)
+        user = UserRegister.objects.filter(Email = email)
         if user:
-            massage = 'User Already Exist'
-            return render(request,'auth_app/register.html', {'msg' : massage})
+            message = 'User Alraedy Exist'
+            return render(request, 'auth_app/register.html', {'msg' : message})
         else:
             if password == cpassword:
-                UserRegister.objects.create(Firstname = firstName,Lastname=lastName,Email=email,Phone=phone,Password=password)
-                massage = 'User Registred Successfully'
-                return render(request, 'auth_app/login.html')
+                UserRegister.objects.create(Firstname = firstname, Lastname = lastname, Email = email, Phone = phone, Password = password)
+                message = 'User Successfully Created'
+                return render(request, 'auth_app/login.html',{'msg':message})
             else:
-                massage = 'Password doesn"t Match '
-                return render(request,'auth_app/register.html', {'msg' : massage})
-            
-       
+                message = 'Please Check Password'
+                return render(request, 'auth_app/register.html', {'msg' : message})
+
