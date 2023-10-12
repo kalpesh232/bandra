@@ -6,3 +6,11 @@ data control language - grant, revoke
 
 select * from table where name in (v1,v2,...)
 select * from table where name is null
+select * from table limit 3,4
+select concat(col1, '-', col2) as 'pred desc', col3, ... from table
+select prod_code as 'product_Code', count(*) as 'Count' , cast(avg(price)as int) as 'Average' from products group bt prod_code having Count >= 2
+alter table products add  suplire_id int not null default 0, add supplier name varchar(255) null, add supplire_contact char(10) null after prod_code;
+alter table suplier_name varchar(100)
+alter table product change supplier_contact supplier_phone char(8)
+a t t drop column column_name
+alter table products rename to new_producrs
