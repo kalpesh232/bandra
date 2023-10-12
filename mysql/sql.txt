@@ -4,13 +4,21 @@ data query language - select
 data transsaction language - commit, rollback, save-point 
 data control language - grant, revoke
 
-select * from table where name in (v1,v2,...)
-select * from table where name is null
-select * from table limit 3,4
-select concat(col1, '-', col2) as 'pred desc', col3, ... from table
-select prod_code as 'product_Code', count(*) as 'Count' , cast(avg(price)as int) as 'Average' from products group bt prod_code having Count >= 2
-alter table products add  suplire_id int not null default 0, add supplier name varchar(255) null, add supplire_contact char(10) null after prod_code;
-alter table suplier_name varchar(100)
-alter table product change supplier_contact supplier_phone char(8)
-a t t drop column column_name
-alter table products rename to new_producrs
+SELECT * FROM one.products where name like '%n___Book' ;
+select * from products where name in ('pen set', 'notebook');
+select * from products where name is null;
+update products set name = null where prod_id = 3;
+alter table  products modify name varchar(50) null;
+select *  from products limit 5,7;
+select concat(prod_code, ' - ' ,name) as 'prod_desc', quentity, price from products;
+alter table products add supplire_id int not null default 0, add supplier_name varchar(50) null, add supplire_phone char(10) not null default 0 after name ; 
+alter table products change supplire_phone supplire_contact char(8);
+describe products;
+alter table products drop column supplire_contact;
+alter table products rename to new_products;
+update  new_products set supplire_id = 3 where prod_id in (3,7,11);
+ALTER TABLE new_products ADD FOREIGN KEY (supplire_id) REFERENCES suppliers (sup_id);
+SHOW COLUMNS FROM new_products;
+alter table new_products  change sup_id supplire_id   int unsigned not null ;
+ALTER TABLE new_products modify column sup_id int unsigned  not null;
+select * from new_products;
