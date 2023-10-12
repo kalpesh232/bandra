@@ -3,3 +3,6 @@ data manipulation language - insert, updaate, delete
 data query language - select
 data transsaction language - commit, rollback, save-point 
 data control language - grant, revoke
+
+select * from table where name in (v1,v2,...)
+select * from table where name is null
