@@ -1,3 +1,6 @@
 flask_env
 matplotlib/.gitattributes
 venv
+python/django/jangoenv
+
+
