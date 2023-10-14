@@ -29,3 +29,38 @@ $ git status
 $ git add --a
 $ git status
 $ git config user.name
+
+$ git status
+$ touch error.log
+$ git status
+$ touch .gitignore
+$ git status
+$ git add --a
+$ git status
+$ git commit -m "added gitignore"
+$ git status
+$ git commit -m "ignore all files of log extention"
+$ git status
+$ git commit -m "git ignore 14-10-23 23:56"
+$ git status
+$ git status
+$ git add --a
+$ git commit -m "git ignore 14-10-23 23:56")
+$ git status
+$ git add --a
+$ git commit -m "git ignore 14-10-23 23:59"
+$ git add --a
+$ git status
+$ git add --a
+$ git commit -m "dir folder in gitignore 00:08"
+$ git status
+$ git add --a
+$ git status
+$ git diff
+$ git status
+$ git add --a
+$ git status
+$ git diff --staged
+$ git status
+
+
