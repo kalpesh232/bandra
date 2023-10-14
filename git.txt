@@ -1,0 +1,30 @@
+$ git status
+$ git init
+$ git status
+$ git add --a
+$ git status
+$ git commit -m "initial commit"
+$ git status
+$ git log
+$ git status
+$ git add v1.txt
+$ git status
+$ git commit -m "changed v1.txt and added better  desing"
+$ git log
+$ rm -rf .git
+$ git status
+$ pwd
+$ ls
+$ cd tensorflow/
+$ ls
+$ git status
+$ git add --a
+$ git status
+$ git commit -m "chenged readme"
+$ git status
+$ git log
+1
+1
+1
+1
+1
