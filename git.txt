@@ -23,8 +23,9 @@ $ git status
 $ git commit -m "chenged readme"
 $ git status
 $ git log
-1
-1
-1
-1
-1
+ git status
+$ git init
+$ git status
+$ git add --a
+$ git status
+$ git config user.name
