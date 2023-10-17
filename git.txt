@@ -64,3 +64,47 @@ $ git diff --staged
 $ git status
 
 
+$ git status
+$ git add .
+$ git commit -m "this is good commit"
+$ git status
+$ git commit -a -m "skiiping stag"
+$ git status
+$ git add sencond.txt
+$ git status
+$ git commit -m "skiiping stag two"
+$ git status
+$ git commit -a -m "skiiping stag 3"
+$ git status
+$ git log
+$ git status
+$ git rm  sencond.txt
+$ git status
+$ git reset
+$ git checkout sencond.txt
+$ git status
+$ git mv  sencond.txt thired.txt
+$ git status
+$ git reset
+$ git checkout sencond.txt
+$ git status
+$ git add .
+$ git status
+$ git commit -m "rename files"
+$ git status
+$ git mv git.txt.txt git
+$ git status
+$ git commit -a -m "chached"
+$ git status
+$ git rm --cached git
+$ git status
+$ git commit -a -m " --chached file name"
+$ git status
+$ git commit -a -m "chached 1"
+$ git status
+$ git rm  --cached sencond.txt
+$ git status
+
+
+
+
