@@ -15,6 +15,7 @@ def User_Register(request):
         cpassword = request.POST['cpassword']
 
         user = UserRegister.objects.filter(Email = email)
+        print('user_filter : ', user)
         if user:
             message = 'User Alraedy Exist'
             return render(request, 'auth_app/register.html', {'msg' : message})
@@ -26,4 +27,26 @@ def User_Register(request):
             else:
                 message = 'Please Check Password'
                 return render(request, 'auth_app/register.html', {'msg' : message})
+
+def UserLoginForm(request):
+    return render(request, 'auth_app/login.html')
+
+def UserLogin(request):
+    if request.method == 'POST':
+        email = request.POST['email']
+        password = request.POST['password']
+
+        user = UserRegister.objects.get(Email=email)
+        if user.Password == password:
+            request.session['Firstname'] = user.Firstname
+            request.session['Lastname'] = user.Lastname
+            request.session['Password'] = user.Password
+            return render(request, 'auth_app/home.html')
+        else:
+            message = "Password doest Not Exist"
+            return render(request, 'auth_app/login.html',{'msg' : message})
+    else:
+        message = "User doest Not Exist"
+        return render(request, 'auth_app/register.html',{'msg' : message})
+
 
