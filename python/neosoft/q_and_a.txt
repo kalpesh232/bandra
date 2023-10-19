@@ -1,0 +1,19 @@
+publish and subscribe system
+send command to control an output
+intrest for incomming  or where you want to publish msgs 
+recives->filter->publish
+
+uses jinja templaing
+complete documentation
+micro framework
+
+object relational mapper
+classes to be mapped database
+
+the client browser send http request to web
+the web server run the application to process te request
+the server return an http response to client browser
+
+allows us to define a class that inherits all the methods and properties from another class.
+
+to dynamic make web page we use jinja template
