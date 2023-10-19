@@ -26,4 +26,18 @@ def User_Register(request):
             else:
                 message = 'Please Check Password'
                 return render(request, 'auth_app/register.html', {'msg' : message})
+            
+def LoginForm(request):
+    return render(request, 'auth_app/login.html')
 
+def UserLogin(request):
+    if request.method == 'POST':
+        email = request.POST['email']
+        password = request.POST['password']
+
+        user = UserRegister.objects.get(email=email)
+        if user.Password == password :
+            request.session['Firstname'] = user.Firstname
+            request.session['Lastname'] = user.Lastname
+            request.session['Password'] = user.Password
+            return render(request, 'auth_app/home.html')
