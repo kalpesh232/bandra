@@ -105,6 +105,42 @@ $ git status
 $ git rm  --cached sencond.txt
 $ git status
 
+$$$$$$$ change-latest-status-pretty-amend-format $$$$$$$$
+
+$ git status
+$ git commit -a -m "clean viewing and changing commit in git"
+$ git status
+$ rm -rf git
+$ git status
+$ rm -rf .git
+$ git status
+$ git clone https://github.com/pandas-dev/pandas.git mypanda
+$ git status
+$ cd mypanda/
+$ git status
+$ git log
+$ git log -p
+$ git log
+$ git log -p -3
+$ git log
+$ git log -3
+$ git log --stat
+$ git log --stat -3
+$ git log --pretty=oneline
+$ git log --pretty=short
+$ git log --pretty=full
+$ git log --since=2.days
+$ git log
+$ git log -1
+$ git commit --amend
+$ git status
+$ git add .
+$ git status
+$ git commit --amend
+$ git log
+$ git log -1
+$ git log --pretty="format:%h-%an"
+
 
 
 
