@@ -24,3 +24,11 @@ except Exception as r :
     print('Error : ', r )
 finally:
     print('Resource Closed')
+
+# user define exception
+class MyException(Exception):
+    pass
+
+c = 25
+if c > 5 :
+    raise MyException("somrting went wrong")
