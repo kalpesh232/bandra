@@ -13,6 +13,8 @@ def User_Register(request):
         phone = request.POST['phone']
         password = request.POST['password']
         cpassword = request.POST['cpassword']
+        image_name = request.POST['imagename']
+        user_pic = request.FILES['image']
 
         user = UserRegister.objects.filter(Email = email)
         print('user_filter : ', user)
@@ -21,7 +23,7 @@ def User_Register(request):
             return render(request, 'auth_app/register.html', {'msg' : message})
         else:
             if password == cpassword:
-                UserRegister.objects.create(Firstname = firstname, Lastname = lastname, Email = email, Phone = phone, Password = password)
+                UserRegister.objects.create(Firstname = firstname, Lastname = lastname, Email = email, Phone = phone, Password = password,ImageName=image_name,pic=user_pic)
                 message = 'User Successfully Created'
                 return render(request, 'auth_app/login.html',{'msg':message})
             else:
