@@ -105,7 +105,7 @@ $ git status
 $ git rm  --cached sencond.txt
 $ git status
 
-$$$$$$$ change-latest-status-pretty-amend-format $$$$$$$$
+$$$$$$$ change-latest-status-pretty-amend-format-since $$$$$$$$
 
 $ git status
 $ git commit -a -m "clean viewing and changing commit in git"
