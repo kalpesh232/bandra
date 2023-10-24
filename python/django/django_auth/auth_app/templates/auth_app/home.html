@@ -5,4 +5,10 @@
     <h3> {{request.session.Lastname}}</h3>
     <br>
     <h3>{{ request.session.Password}}</h3>
+    <br>
+    <h3>{{ request.session.ImageName}}</h3>
+    <br>
+    {{MEDIA_URL}}{{request.session.pic}}{{.url}}
+    <br>
+    <img src="{{MEDIA_URL}}{{request.session.pic}}{{.url}}" alt="">
 </center>
