@@ -8,4 +8,4 @@ class UserRegister(models.Model):
     Phone = models.CharField(max_length=10)
     Password = models.CharField(max_length=50)
     ImageName = models.CharField(max_length=25, default='0000000')
-    pic = models.ImageField(upload_to='static/img/')
+    pic = models.ImageField(upload_to='auth_app/static/img/')
