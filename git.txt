@@ -141,6 +141,19 @@ $ git log
 $ git log -1
 $ git log --pretty="format:%h-%an"
 
+$$$$$$ restore_alias_merg $$$$$$$$$$$$
+
+$ git restore --staged abc.txt
+$ git checkout -- abc.txt
+$ git checkout -f
+$ git config --global alias st.status
+$ git merge myBranch
+$ git branch -v
+$ git branch --merged
+$ git branch --no-merged
+$ git push -d origin bugfix
+
+
 
 
 
