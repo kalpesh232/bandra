@@ -31,6 +31,24 @@ def contact():
     return render_template('index.html')
 HelloApp.add_url_rule('/contact','contact',contact)
 HelloApp.add_url_rule('/hello/<int:num>','hello1',hello1)
+
+def base():
+    return render_template('base.html')
+HelloApp.add_url_rule('/base','base1',base)
+
+def home():
+    return render_template('home.html')
+HelloApp.add_url_rule('/home','home_here',home)
+
+def about1():
+    return render_template('about.html')
+HelloApp.add_url_rule('/about1','about1',about1)
+
+def product():
+    return render_template('product.html')
+HelloApp.add_url_rule('/product','product',product)
+
+
 # print('Flask(__name__) : ',__name__)
 if __name__ == '__main__':
     HelloApp.run(host='0.0.0.0',port=5001, debug=True)
