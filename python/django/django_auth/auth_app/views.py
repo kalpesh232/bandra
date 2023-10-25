@@ -44,9 +44,13 @@ def UserLogin(request):
             request.session['Lastname'] = user.Lastname
             request.session['Password'] = user.Password
             request.session['ImageName'] = user.ImageName
+<<<<<<< HEAD
             request.session['pic'] = 'MEDIA_URL/'+ str(user.pic) 
             # request.session['pic'] = str(user.pic)
             print("  request.session['pic'] >>>>> ",  request.session['pic'])
+=======
+            request.session['pic'] = str(user.pic)
+>>>>>>> 5a969ee3ff1f83c30a040f8ce2c487f8f63e5d52
             return render(request, 'auth_app/home.html')
         else:
             message = "Password doest Not Exist"
