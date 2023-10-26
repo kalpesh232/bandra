@@ -74,4 +74,15 @@ INSERT INTO suppliers (name, phone) VALUES
 ('Allied Enterprises', '4448889999');
 select * from new_products cross join suppliers;
 
+create  or replace view  product_view as
+select new_products.prod_id, new_products.name as 'product_name', new_products.price, suppliers.name as 'suppliers_name'
+from new_products left join suppliers on
+new_products.prod_id =suppliers.sup_id;
+
+create or replace view new_view as 
+select np.prod_id, sp.name from new_products as np join suppliers as sp on
+np.prod_id =  sp.sup_id;
+
+select * from product_view  ;
 select * from new_products;
+select * from suppliers;
