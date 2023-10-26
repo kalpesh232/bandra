@@ -2,5 +2,6 @@ flask_env
 matplotlib/.gitattributes
 venv
 python/django/jangoenv
+python/django/django_auth/auth_app/__pycache__
 
 
