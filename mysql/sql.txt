@@ -86,3 +86,32 @@ np.prod_id =  sp.sup_id;
 select * from product_view  ;
 select * from new_products;
 select * from suppliers;
+
+CREATE TABLE your_table_name (
+    id INT,
+    fname VARCHAR(50),
+    lname VARCHAR(50),
+    class VARCHAR(20),
+    age INT,
+    marks INT
+);
+
+INSERT INTO your_table_name (fname, lname, class, age, marks)
+VALUES
+    ('John', 'Doe', 'Math', 25, 90),
+    ('Alice', 'Smith', 'Science', 22, 85),
+    ('Michael', 'Johnson', 'History', 28, 78),
+    ('Sarah', 'Williams', 'English', 23, 92),
+    ('David', 'Brown', 'Art', 30, 88);
+
+DELIMITER  //
+CREATE FUNCTION Performance(marks INT) 
+RETURNS VARCHAR(50)
+BEGIN
+DECLARE   level varchar(50);
+IF (marks < 20) THEN SET level = 'poor';
+ELSEIF ( 20 < marks < 60) THEN set level = 'good';
+ELSEIF ( marks  > 60 ) THEN set level = 'very good';
+END IF;
+RETURN(level);
+END
