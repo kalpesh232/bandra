@@ -33,10 +33,10 @@
 # if c > 5 :
 #     raise MyException("somrting went wrong")
 
-# if '1' == 1 :
-#     print('hi')
-# else:
-#     print('no')
+if '1' == 1 :
+    print('hi')
+else:
+    print('no')
 
 # try:
 #   # Code that may raise exceptions
@@ -46,9 +46,9 @@
 #    # Exception handling code
 #    print("An error occurred:", str(e))
 
-def foo(): 
-    try:    
-        print(1)    
-    finally:        
-        print(2)
-foo()
+# def foo(): 
+#     try:    
+#         print(1)    
+#     finally:        
+#         print(2)
+# foo()
