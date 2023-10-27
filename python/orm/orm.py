@@ -75,6 +75,15 @@ session.commit()
 
 # ----- change value
 # ----- commit change
-
-
-
+# filter_by
+for i in students:
+    print('engin: ',i.name)
+students = session.query(Student).filter(Student.name == 'ashinde')
+print('filter:---------- ',students)
+students = session.query(Student).filter_by(name = 'zshinde')
+print('filter_by: ',students)
+students.name = 'kalpesh shinde'
+# session.delete(students)
+students = session.query(Student).filter_by(or_(Student.name == "zshinde", Student.age == 25))
+print('filter_by oooooor: ',students)
+session.commit()
