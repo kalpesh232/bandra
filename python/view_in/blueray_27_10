@@ -15,22 +15,26 @@ how to connect mysql in flask python
 model and model manager 
 which  libraries are you using in python
 -------*--------
-differance between list tuple and dictoanry
-List:
-Mutable: Lists are mutable, meaning you can change their contents (add, remove, or modify elements) after they are created.
-Ordered: Lists maintain the order of elements, and you can access elements by their index.
-Syntax: Enclosed in square brackets [].
-Example: my_list = [1, 2, 3, 4, 5]
 
-Tuple:
-Immutable: Tuples are immutable, meaning you cannot change their contents after they are created. Once a tuple is defined, it cannot be modified.
-Ordered: Like lists, tuples also maintain the order of elements and allow access by index.
-Syntax: Enclosed in parentheses ().
-Example: my_tuple = (1, 2, 3, 4, 5)
-
-Dictionary:
-Mutable: Dictionaries are mutable, allowing you to add, modify, or delete key-value pairs.
-Unordered: Dictionaries do not maintain the order of key-value pairs. You access values by their associated keys.
-Syntax: Enclosed in curly braces {} or created using dict(). Key-value pairs are separated by colons, e.g., {'name': 'John', 'age': 30}
-Example: my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
 -------*--------
+SELP INDIA PVT LTD
+
+Roles & Responsivities
+- Python/ EMV & LUA
+- Developed web-based applications using Python,
+- Knowledge of ISO7816
+- Knowledge of EMV specification for Rupay, Master and VISA
+- Develops information systems by coding, designing, developing, testing applications and
+installing software solutions
+- Testing and deploying programs and systems
+- Fixing and improving existing software
+- Create technical documentation for reference and reporting
+- Good Communication Skills
+Required Candidate profile
+- Looking for those candidate who was working on EMV & LUA Project
+- Ability to develop software and applications, team handling
+- Knowledge of coding languages - Python & JAVA,
+- Ability to learn new languages and technologies -Candidates from smart card industry, security
+payment, banking sector will be preferred
+----------------*--------------
+kfoundit8
