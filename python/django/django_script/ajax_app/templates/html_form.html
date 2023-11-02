@@ -44,10 +44,9 @@
             var f = document.frm.fname.value
             let regex = /^[a-zA-Z]+$/; 
             if(!regex .test(f)){
-                alert('hi')
-                document.getElementById('error').innerHTML = "Please Insert only Alphbates";
+                document.getElementById('error').innerHTML = "Please Fill the Value";
             }else if(f.trim()==""){
-                document.getElementById('error').innerHTML = "Please Fill the Value"
+                document.getElementById('error').innerHTML = "Please Insert only Alphbates "
             }else{
                 document.getElementById('error') = ""
             }
