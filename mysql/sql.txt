@@ -23,7 +23,9 @@ alter table new_products  change sup_id supplire_id   int unsigned not null ;
 ALTER TABLE new_products modify column sup_id int unsigned  not null;
 
 
-select * from new_products join suppliers on new_products.supplire_id = suppliers.sup_id;
+select * from new_products join suppliers
+on new_products.supplire_id = suppliers.sup_id;
+
 select * from new_products left join suppliers on new_products.supplire_id = suppliers.sup_id;
 select * from new_products right join suppliers on new_products.supplire_id = suppliers.sup_id;
 select * from new_products left join suppliers on new_products.supplire_id = suppliers.sup_id 
