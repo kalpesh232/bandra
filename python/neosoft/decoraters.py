@@ -1,5 +1,5 @@
 def div(a,b):
-    print(a/b)
+    print('......... :',  a/b)
 
 def smart_div(func):
     def inner(a,b):
@@ -7,5 +7,6 @@ def smart_div(func):
             a,b = b,a
         return func(a,b)
     return inner
-div = smart_div(div)
-div(2,4)
+divv = smart_div(div)
+divv(2,4)
+# divv(4,2)
