@@ -4,3 +4,4 @@ from django.shortcuts import render
 
 def html_form(request):
     return render(request, 'html_form.html')
+
