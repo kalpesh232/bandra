@@ -62,32 +62,38 @@
 # Python program for demonstrating multilevel inheritance  
   
 # Here, we will create the Base class   
-class Grandfather1:  
+# class Grandfather1:  
   
-    def __init__(self, grandfathername1):  
-        self.grandfathername1 = grandfathername1  
+#     def __init__(self, grandfathername1):  
+#         self.grandfathername1 = grandfathername1  
   
-# here, we will create the Intermediate class  
-class Father1(Grandfather1):  
-    def __init__(self, fathername1, grandfathername1):  
-        self.fathername1 = fathername1  
+# # here, we will create the Intermediate class  
+# class Father1(Grandfather1):  
+#     def __init__(self, fathername1, grandfathername1):  
+#         self.fathername1 = fathername1  
   
-        # here, we will invoke the constructor of Grandfather class  
-        Grandfather1.__init__(self, grandfathername1)  
+#         # here, we will invoke the constructor of Grandfather class  
+#         Grandfather1.__init__(self, grandfathername1)  
   
-# here, we will create the Derived class  
-class Son1(Father1):  
-    def __init__(self,sonname1, fathername1, grandfathername1):  
-        self.sonname1 = sonname1  
+# # here, we will create the Derived class  
+# class Son1(Father1):  
+#     def __init__(self,sonname1, fathername1, grandfathername1):  
+#         self.sonname1 = sonname1  
   
-        # here, we will invoke the constructor of Father class  
-        Father1.__init__(self, fathername1, grandfathername1)  
+#         # here, we will invoke the constructor of Father class  
+#         Father1.__init__(self, fathername1, grandfathername1)  
   
-    def print_name(self):  
-        print('Grandfather name is :', self.grandfathername1)  
-        print("Father name is :", self.fathername1)  
-        print("Son name is :", self.sonname1)  
+#     def print_name(self):  
+#         print('Grandfather name is :', self.grandfathername1)  
+#         print("Father name is :", self.fathername1)  
+#         print("Son name is :", self.sonname1)  
   
-# Driver code  
-s1 = Son1('John', 'John Jr', 'John Jr Jr')   
-s1.print_name()  
+# # Driver code  
+# s1 = Son1('John', 'John Jr', 'John Jr Jr')   
+# s1.print_name()  
+
+p = []
+original_list = [1, 2, 3, 4, 5]
+for x in range(len(original_list),0,-1):
+    p.append(x)
+print('original_list : ', p)
